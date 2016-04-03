@@ -19,7 +19,7 @@ int main(void)
   int end=9;
   for(int j=lenght-1;j>0;j--)
     {
-      for (int i=0;i<end;i++)//Careful with indexes remember i++
+      for (int i=0;i<end;i++)//Careful with indexes remember i+1
 	{
      	  if (array[i]>array[i+1])
 	    {
