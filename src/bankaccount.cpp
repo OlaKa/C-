@@ -57,4 +57,5 @@ int main()
     obj.show();
    
     //system("pause"); obsolete command!
+    return 0; //is more appropriate
 }
