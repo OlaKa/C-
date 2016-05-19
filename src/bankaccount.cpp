@@ -5,7 +5,7 @@
 using namespace std;
 
 //This is a old exercise that i made in 2005-2006 or there about.From some C++ learning book i guess.
-//Found it on my old laptop. Compiled with Dev C++ 4.9.9.2 back then. That is why system ("pause") does not work i guess. 
+//Found it on my old laptop. Compiled with Dev C++ 4.9.9.2 back then. That is why system ("pause") does not work. 
 //The code is self-explainatory
 
 class Bankkonto
