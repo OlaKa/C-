@@ -15,9 +15,8 @@ int main() {
 	vec.add("Pelle");
 	vec.add("Kalle");
 
-
-	for(int i =0; i<vec.size();i++){
-		cout<<vec.get(i) << endl;
+	for (int i = 0; i < vec.size(); i++) {
+		cout << vec.get(i) << endl;
 	}
 	return 0;
 }
