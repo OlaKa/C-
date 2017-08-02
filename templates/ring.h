@@ -22,7 +22,8 @@ public:
 	class iterator;
 
 public:
-	ring(int size) : m_pos(0), m_size(size), m_values(NULL) {
+	ring(int size) :
+			m_pos(0), m_size(size), m_values(NULL) {
 		m_values = new T[size];
 	}
 
@@ -35,15 +36,15 @@ public:
 	}
 
 	void add(T value) {
-		m_values[m_pos++]=value;
+		m_values[m_pos++] = value;
 
-		if(m_pos == m_size){
+		if (m_pos == m_size) {
 			m_pos = 0;
 		}
 
 	}
 
-	T & get(int pos){
+	T & get(int pos) {
 		return m_values[pos];
 
 	}
@@ -52,12 +53,28 @@ public:
 
 template<class T>
 class ring<T>::iterator {
-
+private:
+	int m_pos;
+	ring &m_ring;
 public:
-	void print() {
-		cout << "Hello from iterator" << endl;
+	iterator(int pos, ring &aRing) :
+			m_pos(pos), m_ring(aRing) {
 	}
 
+	iterator &operator++(int) {
+		m_pos++;
+		return *this;
+	}
+
+	T &operator*() {
+		return m_ring.get(m_pos);
+
+	}
+
+	bool operator!=(const iterator &other) const{
+		return m_pos !=other.m_pos;
+
+	}
 };
 
 #endif /* RING_H_ */
