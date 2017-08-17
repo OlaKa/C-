@@ -11,6 +11,7 @@ int main()
 	vector<int> numbers1 = {1, 5, 42, 7, 8};
 	vector<int> numbers2 = {10, 7, 4, 2, 2};
 	vector<int> results;
+	
 	transform(numbers1.begin(), numbers1.end(),
 	               numbers2.begin(),
 	               back_inserter(results),
