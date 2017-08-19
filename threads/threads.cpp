@@ -55,7 +55,7 @@ int main() {
 
 	transform(threadList.cbegin(),threadList.cend(),threadList.begin(),op_join<std:thread>);
 
-	for_each(threadsListbegin(),threadList.end(),op_delete<std::thread>);
+	for_each(threadsList.begin(),threadList.end(),op_delete<std::thread>);
 
 	return 0;
 }
