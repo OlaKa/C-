@@ -1,3 +1,3 @@
 # C++
-C++ repository
-As always, feel free to copy any solutions you see fit
+C++ repository for some handy tips and tricks
+
